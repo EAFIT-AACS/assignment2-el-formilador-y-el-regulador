@@ -1,10 +1,6 @@
-#include <iostream>
+#include "ALGORITHM_1_LFCO_2025_JC_AP.h"
 
-using namespace std;
+string ALGORITHM_1_LFCO_2025_JC_AP::generateGrammarStrings() {}
 
-class ALGORITHM_1_LFCO_2025_JC_AP {
-    public:
-        string generateGrammarStrings() {}
+string ALGORITHM_1_LFCO_2025_JC_AP::generateNonGrammarStrings() {}
 
-        string generateNonGrammarStrings() {}
-};

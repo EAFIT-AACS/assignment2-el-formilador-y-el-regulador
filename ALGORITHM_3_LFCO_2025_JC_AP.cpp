@@ -1,8 +1,5 @@
-#include <iostream>
+#include "ALGORITHM_3_LFCO_2025_JC_AP.h"
 
-using namespace std;
-
-class ALGORITHM_3_LFCO_2025_JC_AP {
-    public:
-        void printProccess() {}
-};
+void ALGORITHM_3_LFCO_2025_JC_AP::printProccess() {
+    
+}
