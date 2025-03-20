@@ -5,11 +5,12 @@
 
 using namespace std;
 
-class ALGORITHM_1_LFCO_2025_JC_AP {
-    public:
-        ALGORITHM_1_LFCO_2025_JC_AP();
-        string generateGrammarStrings();
-        string generateNonGrammarStrings();
+class ALGORITHM_1_LFCO_2025_JC_AP
+{
+public:
+    ALGORITHM_1_LFCO_2025_JC_AP();
+    string generateGrammarStrings();
+    string generateNonGrammarStrings();
 };
 
 #endif
