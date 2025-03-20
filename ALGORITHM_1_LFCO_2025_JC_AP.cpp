@@ -46,4 +46,6 @@ string ALGORITHM_1_LFCO_2025_JC_AP::generateNonGrammarStrings()
     }
     } while (checkString(string_to_push) == true);
     */
+
+    return string_to_push;
 }
