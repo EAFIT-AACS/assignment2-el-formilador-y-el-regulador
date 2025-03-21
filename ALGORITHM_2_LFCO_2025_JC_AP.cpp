@@ -3,35 +3,32 @@
 
 bool ALGORITHM_2_LFCO_2025_JC_AP::stringCheck(string string_to_Check) {
         stack<char> stack;
+        stack.push('#');
+        string currentState = "q0";
 
-        //If the string's length is 0, the PDA will accept it
-        if (string_to_Check.empty()) {
-            return true;
-        }
-        
-        //If the string is odd, the PDA will reject it
-        if (string_to_Check.length() % 2 == 1) {
-            return false;
-        }
-        
-        //If the string's length is even, we check if the string is accepted by the PDA
-        for (int j = 0; j < string_to_Check.length(); j++) {
-            if (string_to_Check[j] == 'a') {
+        for (int i = 0; i <= string_to_Check.length(); i++) {
+            if ((currentState == "q0") && (string_to_Check[i] == 'a') && (stack.top() == '#' || stack.top() == 'A')) {
                 stack.push('A');
+                continue;
+            } else if ((currentState == "q0") && (string_to_Check[i] == 'b') && (stack.top() == 'A'))
+            {
+                currentState = "q1";
+                stack.pop();
+                continue;
+            } else if ((currentState == "q1") && (string_to_Check[i] == 'b') && (stack.top() == 'A'))
+            {
+                stack.pop();
+                continue;
+            } else if ((currentState == "q1") && (string_to_Check.length() == i ) && (stack.top() == '#'))
+            {
+                return true;
             } else {
-                if (string_to_Check[j] == 'b') {
-                    if(!stack.empty()) {
-                        stack.pop();
-                    }
-                    
-                }
+                return false;
             }
+            
         }
 
-        if (stack.empty()) {
-            return true;
-        } else {
-            return false;
-        }
-}
+        return false;
+    }
+    
 
