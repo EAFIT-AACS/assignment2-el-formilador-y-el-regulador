@@ -30,6 +30,11 @@ int main() {
         cout << p2.stringCheck(strings[i]) << endl;
     }
 
+    ALGORITHM_3_LFCO_2025_JC_AP p3;
+    for (int i = 0; i < strings.size(); i++) {
+        p3.printProccess(strings[i]);
+    }
+
 
     return 0;
 }
