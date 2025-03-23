@@ -36,7 +36,7 @@ void ALGORITHM_3_LFCO_2025_JC_AP::printProccess(string string_to_Check)
             continue;
         } else if ((currentState == "q1") && (string_to_Check.length() == i ) && (stack.top() == '#'))
         {
-            cout << "String is accepted" << endl;
+            cout << "String is accepted" << endl << endl;
             return;
         }       
     }
@@ -46,8 +46,8 @@ void ALGORITHM_3_LFCO_2025_JC_AP::printer(string str1, string str2, string str3)
 {
     cout << left
     << setw(15) << str1
-    << setw(10) << str2
-    << setw(10) << str3
+    << setw(20) << str2
+    << setw(20) << str3
     << endl;
 }
 string ALGORITHM_3_LFCO_2025_JC_AP::stackToString(stack<char> s) {
