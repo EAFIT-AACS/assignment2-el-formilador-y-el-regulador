@@ -1,18 +1,18 @@
 # 📌 Project README
 ```
-███████╗ ██████╗     
-██╔════╝██╔═══██╗    
-█████╗  ██║   ██║    
-██╔══╝  ██║▄▄ ██║    
-███████╗╚██████╔╝    
-╚══════╝ ╚══▀▀═╝     
-
-███████╗████████╗ █████╗ ████████╗███████╗███████╗
-██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔════╝██╔════╝
-███████╗   ██║   ███████║   ██║   █████╗  ███████╗
-╚════██║   ██║   ██╔══██║   ██║   ██╔══╝  ╚════██║
-███████║   ██║   ██║  ██║   ██║   ███████╗███████║
-╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
+██████╗ ██████╗  █████╗  
+██╔══██╗██╔══██╗██╔══██╗ 
+██████╔╝██║  ██║███████║ 
+██╔═══╝ ██║  ██║██╔══██║ 
+██║     ██████╔╝██║  ██║ 
+╚═╝     ╚═════╝ ╚═╝  ╚═╝
+----------------------------
+ ██████╗███████╗ ██████╗ 
+██╔════╝██╔════╝██╔════╝ 
+██║     █████╗  ██║  ███╗
+██║     ██╔══╝  ██║   ██║
+╚██████╗██║     ╚██████╔╝
+ ╚═════╝╚═╝      ╚═════╝ 
 ```
 
 
@@ -39,7 +39,7 @@
 ## 🚀 Running 
 - **Compilation** To compile the project, use a C++ compiler to produce the binary file. Ensure to include all the .cpp files, here is an example with g++ in linux
 ```bash
-g++ -o a main.cpp DFA.cpp Reader.cpp Printer.cpp
+g++ -o a ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORITHM_3_LFCO_2025_JC_AP.cpp main.cpp
 ```
 - **Execution** After this you will have the binary file in the same location you ran the comand.
 
