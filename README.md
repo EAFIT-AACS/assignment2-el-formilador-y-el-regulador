@@ -14,7 +14,20 @@
 ╚██████╗██║     ╚██████╔╝
  ╚═════╝╚═╝      ╚═════╝ 
 ```
+# 📌 Table of Contents
 
+1. [📖 Description](#-description)
+2. [📚 Class Information](#-class-information)
+3. [👨‍🏫 Teacher](#-teacher)
+4. [👨‍🎓 Students](#-students)
+5. [💻 System Information](#-system-information)
+6. [🚀 Running](#-running)
+    - [Compilation](#compilation)
+    - [Execution](#execution)
+7. [📖 Explanation](#-explanation)
+    - [Algorithm 1](#algorithm-1)
+    - [Algorithm 2](#algorithm-2)
+    - [Algorithm 3](#algorithm-3)
 
 ## 📖 Description
 Implementation of three algorithms in the following order: creation of strings according to grammar, validation of the strings, creation of the sentential form, and configuration of the automaton.
@@ -64,6 +77,9 @@ g++ -o a.exe ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALG
 ## 📖 Explanation
 
 ### Algorithm 1
+
+
+
 
 ### Algorithm 2
 For this algorithm, we used a function that uses a string and returns true if is accepted or false otherwise.
@@ -175,3 +191,17 @@ if (string_to_Check == "") {
 ```
 
 + The second method prints the proccess for the constuction of the M Configuartion tree.
+Much like the first method, it receives as a parameter a string, we then define some string type variables called builder2, currentState and currentString, aswell as a stack of characters called stack. We also print a single column 
+
+```cpp
+stack<char> stack;
+    stack.push('#');
+    string currentState = "q0";
+    string currentString = string_to_Check;
+
+    string builder2 = "(" + currentState + ", " + currentString + ", " + stackToString(stack) + ")";
+
+    cout << "Configurations an accepting computation of M on input x" << endl;
+    cout << setw(10) << builder2 << endl;
+```
+
