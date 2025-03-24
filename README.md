@@ -14,7 +14,7 @@
 ╚██████╗██║     ╚██████╔╝
  ╚═════╝╚═╝      ╚═════╝ 
 ```
-# 📌 Table of Contents
+# 🧾 Table of Contents
 
 1. [📖 Description](#-description)
 2. [📚 Class Information](#-class-information)
