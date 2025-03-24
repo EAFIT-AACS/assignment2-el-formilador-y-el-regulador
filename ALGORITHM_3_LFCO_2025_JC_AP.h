@@ -9,10 +9,9 @@ using namespace std;
 class ALGORITHM_3_LFCO_2025_JC_AP
 {
 public:
-    void printProccess(string string);
-    void printer(string str1, string str2, string str3);
-    string stackToString(stack<char> s);
-
+    void sentential(string string_to_Check);
+    void configurationM(string string_to_Check);
+    string stackToString(stack<char> stack);
 };
 
 #endif

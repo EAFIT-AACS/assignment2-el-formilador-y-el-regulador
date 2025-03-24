@@ -47,6 +47,16 @@ g++ -o a ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORIT
 ./a
 ```
 
+Here is an example with g++ in windows
+```powershell
+g++ -o a ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORITHM_3_LFCO_2025_JC_AP.cpp main.cpp
+```
+- **Execution** After this you will have the binary file in the same location you ran the comand.
+
+```powershell
+.\a
+```
+
 - Important:  
 
 
