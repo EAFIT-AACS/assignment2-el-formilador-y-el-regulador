@@ -17,7 +17,7 @@
 
 
 ## 📖 Description
-
+Implementation of three algorithms in the following order: creation of strings according to grammar, validation of the strings, creation of the sentential form, and configuration of the automaton.
 
 ## 📚 Class Information
 - **Class Number:** 7308  
@@ -57,7 +57,7 @@ g++ -o a.exe ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALG
 .\a.exe
 ```
 
-- Important:  
+
 
 
 

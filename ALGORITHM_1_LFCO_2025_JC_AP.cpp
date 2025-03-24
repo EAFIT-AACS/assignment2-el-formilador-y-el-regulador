@@ -3,7 +3,7 @@
 string ALGORITHM_1_LFCO_2025_JC_AP::generateGrammarStrings()
 {
     string string_to_push = "";
-    int length_string = (rand() % 4) * 2;
+    int length_string = (rand() % 5) * 2;
 
     for (int j = 0; j < length_string / 2; j++)
     {

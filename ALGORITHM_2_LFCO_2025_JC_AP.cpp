@@ -28,6 +28,10 @@ bool ALGORITHM_2_LFCO_2025_JC_AP::stringCheck(string string_to_Check) {
             
         }
 
+        if (string_to_Check == "") {
+            return true;
+        }
+
         return false;
     }
     
