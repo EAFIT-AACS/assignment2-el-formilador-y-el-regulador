@@ -26,6 +26,7 @@ void ALGORITHM_3_LFCO_2025_JC_AP::sentential(string string_to_Check) {
     }
 
     if (string_to_Check == "") {
+        cout << setw(10) << "" << setw(20) << builder << endl;
         cout << setw(10) << "Rule 2" << setw(20) << "" << endl;
         return;
     }

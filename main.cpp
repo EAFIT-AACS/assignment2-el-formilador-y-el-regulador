@@ -31,6 +31,15 @@ int main() {
     //Check if the strings are valid
     vector<string> validStrings;
     ALGORITHM_2_LFCO_2025_JC_AP p2;
+    cout << "Automata M" << endl;
+    cout << "Q = {q0,q1}" << endl;
+    cout << "Sigma = {a,b}" << endl;
+    cout << "Gamma = {A,#}" << endl;
+    cout << "Delta = \n{((q0,a,#),(q0,A#)) \n((q0,a,A),(q0,AA)) \n ((q0,b,A),(q1,epsilon)) \n ((q1,b,A),(q1,epsilon)) \n ((q1,epsilon,#),(q1,epsilon))}" << endl;
+    cout << "start state = q0" << endl;
+    cout << "accept state = {q1}" << endl << endl << endl;
+    cout << "Checking the strings" << endl;
+    cout << "---------------------" << endl;
     for (int i = 0; i < strings.size(); i++) {
         
         if (p2.stringCheck(strings[i])) {
