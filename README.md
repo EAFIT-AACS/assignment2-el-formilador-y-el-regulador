@@ -32,7 +32,7 @@
 ## 📖 Description
 This project focuses on implementing and analyzing a Context-Free Grammar (CFG) and a Pushdown Automaton (PDA) for language recognition. It consists of implementation of three main algorithms in the following order:
 
-+ String Generation according to the grammar G
++ String Generation according to the grammar G       𝑺 → 𝒂𝑺𝒃 | e
 + PDA that recognizes strings from the CFG.
 + Leftmost derivation tree for sentential form and configuration of the PDA.
 
