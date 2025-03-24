@@ -12,7 +12,7 @@ int main() {
 
    
     vector<string> strings;
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 16; i++)
     {
         if (i % 2 == 0) {
             strings.push_back(p1.generateGrammarStrings());
