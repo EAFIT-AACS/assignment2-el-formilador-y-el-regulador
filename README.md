@@ -54,7 +54,17 @@ This project focuses on implementing and analyzing a Context-Free Grammar (CFG) 
 ---
 
 ## 🚀 Running 
-- **Compilation** To compile the project, use a C++ compiler to produce the binary file. Ensure to include all the .cpp files, here is an example with g++ in linux
+- **Compilation** To compile the project, use a C++ compiler to produce the binary file. Ensure to include all the .cpp files, here is an example with g++ in Windows
+```powershell
+g++ -o a.exe ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORITHM_3_LFCO_2025_JC_AP.cpp main.cpp
+```
+- **Execution** After this you will have the binary file in the same location you ran the comand.
+
+```powershell
+.\a.exe
+```
+
+Here is an example with g++ in Linux
 ```bash
 g++ -o a ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORITHM_3_LFCO_2025_JC_AP.cpp main.cpp
 ```
@@ -64,15 +74,7 @@ g++ -o a ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORIT
 ./a
 ```
 
-Here is an example with g++ in windows
-```powershell
-g++ -o a.exe ALGORITHM_1_LFCO_2025_JC_AP.cpp ALGORITHM_2_LFCO_2025_JC_AP.cpp ALGORITHM_3_LFCO_2025_JC_AP.cpp main.cpp
-```
-- **Execution** After this you will have the binary file in the same location you ran the comand.
 
-```powershell
-.\a.exe
-```
 
 
 
