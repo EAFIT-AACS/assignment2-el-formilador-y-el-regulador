@@ -80,6 +80,10 @@ void ALGORITHM_3_LFCO_2025_JC_AP::configurationM(string string_to_Check) {
             stack.pop();
             currentString.erase(0, 1);
 
+            if (currentString == "") {
+                currentString = "\U000003B5";
+            }
+
             cout << left << setw(10) << currentState
             << setw(10) << currentString
             << setw(10) << stackToString(stack)
