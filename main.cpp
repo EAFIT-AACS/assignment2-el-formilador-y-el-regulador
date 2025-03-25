@@ -37,6 +37,7 @@ int main() {
     cout << "\u2713 Gamma = {A,#}" << endl;
     cout << "\u2713 Delta = \n{((q0,a,#),(q0,A#)) \n((q0,a,A),(q0,AA)) \n ((q0,b,A),(q1,epsilon)) \n ((q1,b,A),(q1,epsilon)) \n ((q1,epsilon,#),(q1,epsilon))}" << endl;
     cout << "\u2713 Starting state = q0" << endl;
+    cout << "\u2713 Initial stack symbol = #" << endl;
     cout << "\u2713 Acceptance states = {q1}" << endl << endl << endl;
     cout << "Checking the strings" << endl;
     cout << "---------------------" << endl;
