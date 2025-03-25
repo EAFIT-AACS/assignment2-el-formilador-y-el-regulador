@@ -20,7 +20,7 @@ int main() {
     }
     //Print the strings
     for (int i = 0; i < strings.size(); i++) {
-        cout << "String: " << strings[i] << endl;
+        cout << "\u2A7C String: " << strings[i] << endl;
     }
     cout << endl << endl;
 
@@ -29,17 +29,17 @@ int main() {
 
     //Print the PDA
     cout << "PDA" << endl;
-    cout << "Q = {q0,q1}" << endl;
-    cout << "Sigma = {a,b}" << endl;
-    cout << "Gamma = {A,#}" << endl;
-    cout << "Delta = \n{((q0,a,#),(q0,A#)) \n((q0,a,A),(q0,AA)) \n ((q0,b,A),(q1,epsilon)) \n ((q1,b,A),(q1,epsilon)) \n ((q1,epsilon,#),(q1,epsilon))}" << endl;
-    cout << "start state = q0" << endl;
-    cout << "accept state = {q1}" << endl << endl << endl;
+    cout << "\u2713 Q = {q0,q1}" << endl;
+    cout << "\u2713 Sigma = {a,b}" << endl;
+    cout << "\u2713 Gamma = {A,#}" << endl;
+    cout << "\u2713 Delta = \n{((q0,a,#),(q0,A#)) \n((q0,a,A),(q0,AA)) \n ((q0,b,A),(q1,epsilon)) \n ((q1,b,A),(q1,epsilon)) \n ((q1,epsilon,#),(q1,epsilon))}" << endl;
+    cout << "\u2713 Starting state = q0" << endl;
+    cout << "\u2713 Acceptance states = {q1}" << endl << endl << endl;
     cout << "Checking the strings" << endl;
     cout << "---------------------" << endl;
 
     //Check if the strings are valid
-    vector<string> validStrings;
+    vector<string> validStrings; 
     ALGORITHM_2_LFCO_2025_JC_AP p2;
 
    
@@ -47,10 +47,10 @@ int main() {
         
         if (p2.stringCheck(strings[i])) {
             validStrings.push_back(strings[i]);
-            cout << "The String: " << strings[i] << " is accepted by PDA." << endl;
+            cout << "\u2705 The String: " << strings[i] << " is accepted by the PDA." << endl;
         }
         else {
-            cout << "The String: " << strings[i] << " is rejected by PDA." << endl;
+            cout << "\u274C The String: " << strings[i] << " is rejected by the PDA." << endl;
         }
     }
     cout << endl << endl;
@@ -60,7 +60,7 @@ int main() {
     cout << "Sentential Form and Configuration of the valid strings" << endl;
     cout << "------------------------------------------------------" << endl;
     cout << "Rule 1 - S -> aSb" << endl;
-    cout << "Rule 2 - S -> epsilon" << endl;
+    cout << "Rule 2 - S -> \U000003B5" << endl;
     cout << endl;
 
 
