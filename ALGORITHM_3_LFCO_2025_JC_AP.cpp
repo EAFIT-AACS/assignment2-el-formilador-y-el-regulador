@@ -46,19 +46,30 @@ void ALGORITHM_3_LFCO_2025_JC_AP::configurationM(string string_to_Check) {
     string currentString = string_to_Check;
 
     // Create a builder2 variable made of (state, string, elements of the stack)
-    string builder2 = "(" + currentState + ", " + currentString + ", " + stackToString(stack) + ")";
+    
+    cout << "Accepting computation of M on input x" << endl << endl;    
 
-    cout << "Accepting computation of M on input x" << endl;
-    cout << setw(10) << builder2 << endl;
 
+    cout << left << setw(10) << "State" 
+         << setw(10) << "String" 
+         << setw(10) << "Stack" 
+         << endl;
+
+    cout << left << setw(10) << currentState
+         << setw(10) << currentString
+         << setw(10) << stackToString(stack)
+         << endl;
+         
     for (int i = 0; i <= string_to_Check.size(); i++) {
         // Analog to the first and second transitions, pushes 'A' into the stack and erases the first character of currentString
         if ((currentState == "q0") && (string_to_Check[i] == 'a') && (stack.top() == '#' || stack.top() == 'A')) {
             stack.push('A');
             currentString.erase(0, 1);
 
-            builder2 = "(" + currentState + ", " + currentString + ", " + stackToString(stack) + ")";
-            cout << setw(10) << builder2 << endl;
+            cout << left << setw(10) << currentState
+            << setw(10) << currentString
+            << setw(10) << stackToString(stack)
+            << endl;
 
             continue;
         }
@@ -69,8 +80,10 @@ void ALGORITHM_3_LFCO_2025_JC_AP::configurationM(string string_to_Check) {
             stack.pop();
             currentString.erase(0, 1);
 
-            builder2 = "(" + currentState + ", " + currentString + ", " + stackToString(stack) + ")";
-            cout << setw(10) << builder2 << endl;
+            cout << left << setw(10) << currentState
+            << setw(10) << currentString
+            << setw(10) << stackToString(stack)
+            << endl;
 
             continue;
         } 
@@ -84,8 +97,10 @@ void ALGORITHM_3_LFCO_2025_JC_AP::configurationM(string string_to_Check) {
                 currentString = "\U000003B5";
             }
 
-            builder2 = "(" + currentState + ", " + currentString + ", " + stackToString(stack) + ")";
-            cout << setw(10) << builder2 << endl;
+            cout << left << setw(10) << currentState
+            << setw(10) << currentString
+            << setw(10) << stackToString(stack)
+            << endl;
 
             continue;
         } 
@@ -95,8 +110,10 @@ void ALGORITHM_3_LFCO_2025_JC_AP::configurationM(string string_to_Check) {
             stack.pop();
             currentString = "\U000003B5";
 
-            builder2 = "(" + currentState + ", " + currentString + ", " + "\U000003B5" + ")";
-            cout << setw(10) << builder2 << endl;
+            cout << left << setw(10) << currentState
+            << setw(10) << currentString
+            << setw(10) << stackToString(stack)
+            << endl;
             
             return;
         }

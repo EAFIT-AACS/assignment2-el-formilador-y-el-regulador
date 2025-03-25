@@ -10,6 +10,9 @@ int main() {
     //Generate 16 strings and put them into a vector, 8 valid and 8 invalid
     ALGORITHM_1_LFCO_2025_JC_AP p1;
     vector<string> strings;
+
+    cout << "Generating strings" << endl;
+    cout << "------------------" << endl;
     for (int i = 0; i < 16; i++)
     {
         if (i % 2 == 0) {
@@ -67,12 +70,14 @@ int main() {
     
     ALGORITHM_3_LFCO_2025_JC_AP p3;
     for (int i = 0; i < validStrings.size(); i++) {
+        cout << "------------------------------------------------------" << endl;
         cout << "String: " << validStrings[i] << endl;
         cout << endl;
         p3.sentential(validStrings[i]);
         cout << endl;
         cout << endl;
         p3.configurationM(validStrings[i]);
+        cout << "------------------------------------------------------" << endl;
         cout << endl;
         cout << endl;
         
